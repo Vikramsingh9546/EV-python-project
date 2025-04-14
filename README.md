@@ -171,7 +171,7 @@ plt.grid(True, alpha=0.3)
 plt.tight_layout()
 plt.show()
 
-# 15. MSRP Distribution by Electric Vehicle Type
+# 15. MSRP Distribution by Electric Vehicle Typ
 msrp_trend = df.groupby("Model Year")["Base MSRP"].mean().reset_index()
 plt.figure(figsize=(12, 8))
 sns.lineplot(data=msrp_trend, x="Model Year", y="Base MSRP", 
